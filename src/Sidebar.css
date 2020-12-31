@@ -1,0 +1,54 @@
+.sidebar {
+    flex: 0.25;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-right: 1px solid lightgray;
+}
+
+.sidebar__header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    height: 50px;
+}
+
+.sidebar__avatar {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.sidebar__input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    background-color: #e1e1e1;
+    color: gray;
+    border-radius: 5px;
+}
+
+.sidebar__input > input {
+    border: none;
+    background-color: #e1e1e1;
+    /* 輸入框在輸入時不會有外框 */
+    outline-width: 0;
+}
+
+.sidebar__chats {
+    overflow: auto;
+}
+
+
+/* 一定要先設定 -webkit-scrollbar 後面設定的樣式才會起作用*/
+.sidebar__chats::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar__chats::-webkit-scrollbar-thumb {
+    background-color: #cccccca2;
+    
+    border-radius: 5px;
+}
+
